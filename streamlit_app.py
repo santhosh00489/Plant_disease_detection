@@ -36,7 +36,7 @@ st.markdown(page_bg_img, unsafe_allow_html=True)
 
 
 try:
-    model = tf.keras.models.load_model('best_plant_model (3).h5')
+    model = tf.keras.models.load_model('best_plant_model.h5')
 except Exception as e:
     st.error(f"Error loading the model: {e}")
 
