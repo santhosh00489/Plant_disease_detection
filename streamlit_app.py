@@ -34,7 +34,7 @@ background-size: cover;
 
 st.markdown(page_bg_img, unsafe_allow_html=True)
 
-model = tf.keras.models.load_model('best_plant_model (3).h5')
+model = tf.keras.models.load_model('best_plant_model.h5')
 
 class_names = ['Apple___Apple_scab',
  'Apple___Black_rot',
