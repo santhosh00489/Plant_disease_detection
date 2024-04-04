@@ -19,7 +19,7 @@ with ZipFile(file_name, 'r') as zip:
 
 st.title('PLANT DISEASE DETECTION')
 st.sidebar.title("PLANT DISEASE DETECTION")
-st.sidebar.caption("Know about your Planta")
+st.sidebar.caption("Know about your Plant")
 st.sidebar.caption("This model is trained with 87k plant diseased leaves ")
 st.sidebar.markdown("'Tomato', 'Grape', 'Orange', 'Soybean', 'Squash', 'Potato', 'Corn_(maize)', 'Strawberry', 'Peach', 'Apple', 'Blueberry', 'Cherry_(including_sour)', 'Pepper,_bell', 'Raspberry'")
 
@@ -36,7 +36,7 @@ background-size: cover;
 st.markdown(page_bg_img, unsafe_allow_html=True)
 
 
-model = tf.keras.models.load_model('best_plant_model (3).h5')
+model = tf.keras.models.load_model('best_plant_model (3).h5', custom_objects={'KerasLayer':hub.KerasLayer})
 
 class_names = ['Apple___Apple_scab',
  'Apple___Black_rot',
