@@ -8,9 +8,6 @@ import matplotlib.image as mpimg
 import tensorflow as tf
 from zipfile import ZipFile
 
-# Registering custom objects
-import tensorflow_addons as tfa
-tf.keras.utils.get_custom_objects()['TFOpLambda'] = tfa.layers.TFOpLambda
   
 # specifying the zip file name
 file_name = "best_plant_model (3).zip"
